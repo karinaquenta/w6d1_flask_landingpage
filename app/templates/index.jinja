@@ -1,0 +1,10 @@
+{% extends "base.jinja" %}
+
+{% block content %}
+    <h3>Area</h3>
+    <p> {{ area[0] }} {{ area[1] }} </p>
+    <h3>Types</h3>
+    {% for type in types %}
+    <p>{{ type }}</p>
+    {% endfor %}
+{% endblock %}
